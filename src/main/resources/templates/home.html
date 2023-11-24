@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://wwww.thymeleaf.org"
+        xmlns="http://www.w3.org/1999/xhtml">
+
+<head th:replace="~{layout/layout :: head}">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <!-- inicio Top Nav -->
+    <nav th:replace="~{layout/layout :: navbar}">
+    </nav>
+    <!-- fin Top Nav -->
+
+
+    <!-- Header -->
+    <nav th:replace="~{layout/layout :: header}">
+    </nav>
+    <!-- fin Header -->
+
+
+
+    <!-- carrusel-->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" th:src="@{/img/banner_img_01.jpg}" src="../static/img/banner_img_01.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-danger"><b>Variedad Outlet</b></h1>
+                                <p>
+                                    amplia selección de tenis de marcas líderes en la industria. 
+                                    Ya sea que estés buscando calzado para correr, entrenar, caminar o simplemente quieras lucir a la moda, tenemos algo para cada ocasión, 
+                                    nuestro compromiso con la calidad y la autenticidad asegura que cada par de tenis que vendemos sea genuino y esté a la altura de las expectativas de nuestros 
+                                    clientes. Encuentranos tambien en  <a rel="sponsored" class="text-danger" href="https://www.facebook.com/profile.php?id=100048682908928" target="_blank">Facebook</a> 
+                                    e
+                                    <a rel="sponsored" class="text-danger" href="https://www.instagram.com/outletvariedad/" target="_blank">Instagram</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" th:src="@{/img/banner_img_02.png}" src="../static/img/banner_img_02.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Variedad de Precios</h1>
+                                <p>
+                                    ¡Descubre la excelencia sin comprometer tu bolsillo! 
+                                    Nuestra selección te ofrece productos de calidad a precios irresistibles, 
+                                    para que todos puedan disfrutar de lo mejor sin sacrificar su presupuesto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" th:src="@{/img/banner_img_03.png}" src="../static/img/banner_img_03.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Variedad de calzado</h1>
+                                <p>
+                                    ¡Descubre una amplia gama de estilos y marcas exclusivas que te permitirán expresar tu singularidad! En nuestro catálogo, 
+                                    encontrarás la variedad perfecta para que cada persona encuentre su estilo único.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- fin carrusel -->
+
+
+    <!-- marcas populares -->
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Marcas populares</h1>
+                <p>
+                    Calzado de renombre que define el estilo y la calidad. Encuentra los tenis y zapatos más populares que te mantendrán a la moda y cómodo.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img th:src="@{/img/nike_logo.png}" src="../static/img/nike_logo.png" class="img-fluid"></a>
+                <h5 class="text-center mt-3 mb-3">Nike</h5>
+                <p class="text-center"><a class="btn btn-danger">Ver</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img th:src="@{/img/adidas_logo.png}" src="../static/img/adidas_logo.png" class="img-fluid"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Adidas</h2>
+                <p class="text-center"><a class="btn btn-danger">Ver</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img th:src="@{/img/new_balance_logo.png}" src="../static/img/new_balance_logo.png" class="img-fluid"></a>
+                <h2 class="h5 text-center mt-3 mb-3">New Balance</h2>
+                <p class="text-center"><a class="btn btn-danger">Ver</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- fin marcas populares-->
+
+    <!--  Footer -->
+    <footer th:replace="~{layout/layout :: footer}">
+
+    </footer>
+    <!-- final Footer -->
+
+</body>
+
+</html>

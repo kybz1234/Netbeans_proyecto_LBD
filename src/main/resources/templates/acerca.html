@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"
+        xmlns:th="http://wwww.thymeleaf.org"
+        xmlns="http://www.w3.org/1999/xhtml">
+
+<head th:replace="~{layout/layout :: head}">
+    <title>Acerca de</title>
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav th:replace="~{layout/layout :: navbar}">
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav th:replace="~{layout/layout :: header}">
+    </nav>
+    <!-- Close Header -->
+
+    <section class="bg-danger py-5">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-md-8 text-white">
+                    <h1>Acerca de nosotros</h1>
+                    <p>
+                        <h5><strong>Mision</strong></h5>
+                        ofrecer a nuestros clientes una amplia gama de tenis de las principales marcas a 
+                        los precios más competitivos del mercado, creemos que la 
+                        comodidad y el estilo no deben romper el banco
+                        <br />
+                        <h5><strong>Vision</strong></h5>
+                        ser reconocidos como el referente en la industria del calzado deportivo asequible, 
+                        buscamos convertirnos en el destino principal para todos los amantes del deporte y 
+                        la moda que desean estar a la vanguardia sin gastar en exceso
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img th:src="@{/img/about_page.svg}" src="../static/img/about_page.svg" height="300" alt="About Hero">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close Banner -->
+
+    <!-- Start Section -->
+    <section class="container py-5">
+        <div class="row text-center pt-5 pb-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Nuestros Servicios</h1>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-danger text-center"><i class="fa fa-truck fa-lg"></i></div>
+                    <h2 class="h5 mt-4 text-center">Envio</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-danger text-center"><i class="fa fa-cubes"></i></div>
+                    <h2 class="h5 mt-4 text-center">Variedad de productos</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-danger text-center"><i class="fa fa-percent"></i></div>
+                    <h2 class="h5 mt-4 text-center">Promociones</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-danger text-center"><i class="fa fa-user"></i></div>
+                    <h2 class="h5 mt-4 text-center">Servicio en tiendas</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+
+    <!-- marcas -->
+    <section th:replace="~{layout/layout :: marcas}">
+
+
+    </section>
+    <!-- Final Marcas -->
+
+
+    <!-- Start Footer -->
+    <footer th:replace="~{layout/layout :: footer}">
+
+    </footer>
+    <!-- End Footer -->
+</body>
+
+</html>
